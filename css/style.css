@@ -17,6 +17,10 @@ body {
   box-sizing: border-box;
 }
 
+img{
+  width: 100%;
+}
+
 /*ーーーーーーーーーーーーーーーーー
 　bace
 ーーーーーーーーーーーーーーーーー*/
@@ -95,6 +99,7 @@ body {
   color: #707070;
 }
 .top-card img{
+  width: auto;
   height: 232px;
 }
 
@@ -128,4 +133,16 @@ li:last-of-type .top-card{
 
 .flex-2{
   flex-basis: 50%;
+}
+
+/*ーーーーーーーーーーーーーーーーー
+　characteristics
+ーーーーーーーーーーーーーーーーー*/
+.characteristics .flex{
+  justify-content: space-between;
+}
+
+.flex .character-items{
+  flex-basis: 30%;
+  margin-bottom: 0;
 }
