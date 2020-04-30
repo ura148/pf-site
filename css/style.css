@@ -16,3 +16,26 @@ body {
 	letter-spacing: : 0.05rem;
   box-sizing: border-box;
 }
+
+
+
+
+
+/*ーーーーーーーーーーーーーーーーー
+　eyecatch
+ーーーーーーーーーーーーーーーーー*/
+.eyecatch{
+  height: 27.1875vw;
+  background-image: url(../img/eyecatch__pc.jpg);
+}
+
+.eyecatch h2{
+  padding-top: calc(13.59375vw - 42px);
+  padding-left: 0;
+  font-family: 'Star Jedi', arial;
+  font-weight: normal;
+  text-align: center;
+  font-size: 6.6rem;
+  line-height: 1;
+  color: #f8fafc;
+}
