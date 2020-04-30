@@ -1,1 +1,18 @@
 @charset "UTF-8";
+
+html{
+	font-size:62.5%;/*16px×62.5％＝10px*/
+}
+
+body {
+	font-family: open-sans, noto-sans-cjk-jp, sans-serif;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+  color: #707070;
+  font-size: 1.6rem;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+	letter-spacing: : 0.05rem;
+  box-sizing: border-box;
+}
