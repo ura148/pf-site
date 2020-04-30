@@ -5,22 +5,52 @@ html{
 }
 
 body {
-	font-family: open-sans, noto-sans-cjk-jp, sans-serif;
+	font-family: trajan-pro-3,'a-otf-ryumin-pr6n', sans-serif;
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
   color: #707070;
   font-size: 1.6rem;
-  line-height: 1;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
 	letter-spacing: : 0.05rem;
   box-sizing: border-box;
 }
 
+/*ーーーーーーーーーーーーーーーーー
+　bace
+ーーーーーーーーーーーーーーーーー*/
+.main-wrapper{
+  max-width: 732px;
+  margin: 0 auto;
+}
 
+.img_full{
+  box-sizing: border-box;
+  margin-left: calc( ( 100vw - 732px ) / 2 * -1 );
+  margin-right: calc( ( 100vw - 732px ) / 2 * -1 );
+}
 
+.text-center{
+  text-align: center;
+}
 
+.flex{
+  display: flex;
+}
 
+/*ーーーーーーーーーーーーーーーーー
+　section
+ーーーーーーーーーーーーーーーーー*/
+.section{
+  margin-top: 160px;
+}
+
+.section h2{
+  margin-bottom: 120px;
+  font-size: 5.6rem;
+  line-height: 1;
+}
 /*ーーーーーーーーーーーーーーーーー
 　eyecatch
 ーーーーーーーーーーーーーーーーー*/
@@ -38,4 +68,18 @@ body {
   font-size: 6.6rem;
   line-height: 1;
   color: #f8fafc;
+}
+
+/*ーーーーーーーーーーーーーーーーー
+　profile
+ーーーーーーーーーーーーーーーーー*/
+.profile-content img {
+  width: auto;
+  height: 194px;
+  margin-right: 52px;
+  margin-bottom: 0;
+}
+
+.profile-content p:not(:last-child){
+  margin-bottom: 16px;
 }
