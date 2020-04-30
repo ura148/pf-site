@@ -83,3 +83,49 @@ body {
 .profile-content p:not(:last-child){
   margin-bottom: 16px;
 }
+
+/* top-card */
+.top-card{
+	box-shadow: 0 3px 6px 2px rgba(0,0,0,0.32);
+	margin-bottom: 66px;
+}
+
+.top-card__contents{
+  position: relative;
+  color: #707070;
+}
+.top-card img{
+  height: 232px;
+}
+
+.top-card h3{
+  margin-top: 44px;
+  margin-bottom: 10px;
+  font-size: 3.2rem;
+  line-height: 1.2;
+}
+
+.top-card h4{
+  margin-top: 0;
+  font-size: 1.6rem;
+  font-weight: lighter;
+}
+
+.top-card p{
+  position: absolute;
+  bottom: 26px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.portfolios li:nth-child(2n) .flex{
+  flex-direction: row-reverse;
+}
+
+li:last-of-type .top-card{
+  margin-bottom: 0;
+}
+
+.flex-2{
+  flex-basis: 50%;
+}
