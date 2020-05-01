@@ -56,6 +56,76 @@ img{
   font-size: 5.6rem;
   line-height: 1;
 }
+
+
+/*ーーーーーーーーーーーーーーーーー
+　header
+ーーーーーーーーーーーーーーーーー*/
+
+.header{
+  background-color: #0A0A0C; /* Darth Vader color */
+  margin: 0;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.header a {
+  font-size: 1.6rem;
+  font-family: trajan-pro-3, arial;
+	color: #f8fafc;
+}
+
+
+
+.header-menu-bar{
+	align-items: center; /* 上下方向の中央揃え */
+  padding: 0 18px;
+  margin: 0;
+}
+
+.header-menu-bar.flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.myhead p {
+  font-size: var(--f6);
+}
+
+.menu-item{
+	padding-right: 16px;
+  height: 66px;
+  line-height: 66px;
+}
+
+.menu-item:last-child{
+	padding-right: 0;
+}
+
+.menu-item a{
+  display: block;
+  font-size: 1.6rem;
+}
+
+.menu-item a :nth-child(-n+2){
+	display:inline-block;
+	font-size: 3.2rem;
+	vertical-align: middle;
+}
+
+/*ーーーーーーーーーーーーーーーーー
+　btn(header)
+ーーーーーーーーーーーーーーーーー*/
+.btn-trigger{
+	display: none;
+}
+
+
 /*ーーーーーーーーーーーーーーーーー
 　eyecatch
 ーーーーーーーーーーーーーーーーー*/
@@ -79,6 +149,9 @@ img{
 /*ーーーーーーーーーーーーーーーーー
 　profile
 ーーーーーーーーーーーーーーーーー*/
+.profile-content.flex{
+	flex-wrap: nowrap;
+}
 .profile-content img {
   width: auto;
   height: 194px;

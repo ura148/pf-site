@@ -6,6 +6,7 @@
   <title>uraura Portfolio site</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <script>
     (function(d) {
       var config = {
@@ -18,7 +19,30 @@
   </script>
 </head>
 <body>
-  <header>
+  <header class="header">
+    <div class="header-menu-bar flex">
+      <a href="#">
+        <h1>uraura portfolio site</h1>
+      </a>
+
+      <button class="btn-trigger">
+        <span class="btn-nav-line"></span>
+        <span class="btn-nav-line"></span>
+        <span class="btn-nav-line"></span>
+        <span class="btn-menu menu">menu</span>
+        <span class="btn-menu close">close</span>
+      </button>
+
+      <div class="header-nav">
+        <ul class="flex">
+          <li class="menu-item"><a href="">portfolio</a></li>
+          <li class="menu-item"><a href="">blog</a></li>
+          <li class="menu-item"><a href="">contact</a></li>
+          <li class="menu-item"><a href=""><span class="fa fa-twitter sns"></a></li>
+          <li class="menu-item"><a href=""><span class="fa fa-github"></a></li>
+        </ul>
+      </div>
+    </div>
 
   </header>
 
