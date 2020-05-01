@@ -25,10 +25,9 @@ img{
 　bace
 ーーーーーーーーーーーーーーーーー*/
 .wrapper{
-  box-sizing: border-box;
-  padding: 0 12.5%;
+  padding: 0 4%;
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 880px;
 
 }
 
@@ -86,51 +85,94 @@ img{
   margin-bottom: 16px;
 }
 
-/* top-card */
-.top-card{
+/*ーーーーーーーーーーーーーーーーー
+　portfolio
+ーーーーーーーーーーーーーーーーー*/
+.portfolios ul{
+	height: 443.52px;
+}
+
+.portfolios .flex{
+	justify-content: space-between;
+}
+
+.pf-list{
+	position: relative;
+	flex-basis: 30%;
+	max-width: 275px;
+}
+
+.pf__bg{
+	background-image: url(../img/pf1.jpg);
+  background-size: cover;
+  background-position: center;
 	box-shadow: 0 3px 6px 2px rgba(0,0,0,0.32);
-	margin-bottom: 66px;
-}
-
-.top-card__contents{
+  z-index: 0;
+  height: 100%;
   position: relative;
-  color: #707070;
-}
-.top-card img{
-  width: auto;
-  height: 232px;
+  overflow: hidden;
 }
 
-.top-card h3{
-  margin-top: 44px;
+.bg2{
+	background-image: url(../img/pf2.jpg);
+}
+
+
+.pf-img{
+	position: absolute;
+}
+
+.pf-img:hover{
+	filter: blur(5px);
+}
+
+.pf-content{
+
+	width: 100%;
+	opacity: 0;
+	position: absolute;
+	color: #fff;
+	background-color:	rgba(0,0,0,0.7);
+	-webkit-transition:	all 0.6s ease;
+	transition:	all 0.4s ease;
+}
+
+.pf-content:hover{
+	opacity: 1;
+}
+
+.pf__bg:after{
+	content: '';
+  position: absolute;
+	background-position: center;
+
+}
+
+.pf__bg:hover:after{
+	/* 輪郭がぼやけてしまうのでブラー範囲を広げる */
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background: inherit;
+  filter: blur(5px);
+	z-index: -1;
+	transition:	all 0.6s ease;
+	transform: scale(1.3);
+}
+
+.pf-content h3{
   margin-bottom: 10px;
   font-size: 3.2rem;
   line-height: 1.2;
 }
 
-.top-card h4{
-  margin-top: 0;
-  font-size: 1.6rem;
-  font-weight: lighter;
+.pf-content P:hover{
+	color: #707070;
 }
 
-.top-card p{
-  position: absolute;
-  bottom: 26px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.portfolios li:nth-child(2n) .flex{
-  flex-direction: row-reverse;
-}
-
-li:last-of-type .top-card{
+li:last-of-type .pf__bg{
   margin-bottom: 0;
-}
-
-.flex-2{
-  flex-basis: 50%;
 }
 
 /*ーーーーーーーーーーーーーーーーー
@@ -143,4 +185,34 @@ li:last-of-type .top-card{
 .flex .character-items{
   flex-basis: 30%;
   margin-bottom: 0;
+}
+
+
+.img_full{
+	margin-left: calc( ( 100vw - 880px) / 2 * -1 );
+	margin-right: calc( ( 100vw - 880px) / 2 * -1 );
+}
+
+
+
+/*ーーーーーーーーーーーーーーーーー
+　animation
+ーーーーーーーーーーーーーーーーー*/
+.fade-animation{
+	opacity: 0;
+}
+.fade-in{
+	animation: fadein 0.8s forwards ease-in-out;
+}
+
+@keyframes fadein {
+	0%{
+		opacity: 0;
+		transform: translateY(80px);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
