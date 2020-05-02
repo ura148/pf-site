@@ -44,6 +44,13 @@ img{
 	justify-content: space-between;
 }
 
+.sns{
+	display:inline-block;
+	font-size: 3.2rem;
+	color:  #f8fafc;
+	vertical-align: middle;
+}
+
 /*ーーーーーーーーーーーーーーーーー
 　section
 ーーーーーーーーーーーーーーーーー*/
@@ -114,12 +121,6 @@ h2.next-is-text{
 .menu-item a{
   display: block;
   font-size: 1.6rem;
-}
-
-.menu-item a :nth-child(-n+2){
-	display:inline-block;
-	font-size: 3.2rem;
-	vertical-align: middle;
 }
 
 /*ーーーーーーーーーーーーーーーーー
@@ -306,6 +307,38 @@ li:last-of-type .pf__bg{
 	margin: 66px auto 32px;
 	margin-top: 66px;
 }
+
+
+/*ーーーーーーーーーーーーーーーーー
+　contact
+ーーーーーーーーーーーーーーーーー*/
+.contact .btna{
+	margin-bottom: 160px;
+}
+
+
+
+
+
+
+/*ーーーーーーーーーーーーーーーーー
+　footer
+ーーーーーーーーーーーーーーーーー*/
+.footer{
+	padding: 32px 0 16px;
+	background-color: #0A0A0C;
+	color: #f8fafc;
+}
+
+.footer>p{
+	font-family: 'Star Jedi', arial;
+	font-size: 3.2rem;
+}
+
+.footer .flex{
+	justify-content: center;
+}
+
 
 
 
