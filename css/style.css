@@ -72,7 +72,6 @@ h2.next-is-text{
 /*ーーーーーーーーーーーーーーーーー
 　header
 ーーーーーーーーーーーーーーーーー*/
-
 .header{
   background-color: #0A0A0C; /* Darth Vader color */
   margin: 0;
@@ -145,6 +144,7 @@ h2.next-is-text{
 　eyecatch
 ーーーーーーーーーーーーーーーーー*/
 .eyecatch{
+	width: 100%;
 	margin-top: 66px;
   height: 27.1875vw;
   background-image: url(../img/eyecatch__pc.jpg);
@@ -332,6 +332,53 @@ li:last-of-type .pf__bg{
 
 .footer .flex{
 	justify-content: center;
+}
+
+
+@media screen and (max-width:768px){
+	/*ーーーーーーーーーーーーーーーーー
+	　bace
+	ーーーーーーーーーーーーーーーーー*/
+	.br__sp{
+		display: block;
+	}
+
+	/*ーーーーーーーーーーーーーーーーー
+	　section
+	ーーーーーーーーーーーーーーーーー*/
+	.section{
+	  margin-top: 160px;
+	}
+
+	.section h2{
+	  margin-bottom: 120px;
+	  font-size: 2.8rem;
+	  line-height: 1;
+	}
+
+	h2.next-is-text{
+		margin-bottom: 32px;
+	}
+
+	/*ーーーーーーーーーーーーーーーーー
+	　eyecatch
+	ーーーーーーーーーーーーーーーーー*/
+	.eyecatch{
+		margin-top: 40px;
+	  height: 61.6vw;
+	  background-image: url(../img/eyecatch__sp.jpg);
+	  background-size: cover;
+	}
+
+	.eyecatch h2{
+	  padding-top: calc(13.59375vw - 42px);
+	  padding-left: 0;
+	  font-size: 3.6rem;
+		text-align: left;
+	  line-height: 1;
+	  color: #f8fafc;
+	}
+
 }
 
 /*ーーーーーーーーーーーーーーーーー
