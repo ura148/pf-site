@@ -186,7 +186,7 @@ h2.next-is-text{
 	height: 443.52px;
 }
 
-.pf-list{
+.pf-item{
 	position: relative;
 	flex-basis: 30%;
 	max-width: 275px;
@@ -395,6 +395,25 @@ li:last-of-type .pf__bg{
 	.profile-content img{
 		display: block;
 		margin: 0 auto 16px;
+	}
+
+	/*ーーーーーーーーーーーーーーーーー
+	　profile
+	ーーーーーーーーーーーーーーーーー*/
+	.portfolios .flex{
+		display: block;
+	}
+
+	.portfolios ul{
+		height: 1000px;
+	}
+
+	.pf-item{
+		margin:0 auto;
+	}
+
+	.pf-item:not(:last-child){
+		margin-bottom: 32px;
 	}
 
 }
