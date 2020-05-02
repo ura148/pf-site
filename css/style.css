@@ -130,6 +130,7 @@ img{
 　eyecatch
 ーーーーーーーーーーーーーーーーー*/
 .eyecatch{
+	margin-top: 66px;
   height: 27.1875vw;
   background-image: url(../img/eyecatch__pc.jpg);
   background-size: cover;
