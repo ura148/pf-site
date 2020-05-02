@@ -416,6 +416,27 @@ li:last-of-type .pf__bg{
 		margin-bottom: 32px;
 	}
 
+	/*ーーーーーーーーーーーーーーーーー
+	　characteristics
+	ーーーーーーーーーーーーーーーーー*/
+	.characteristics .flex{
+		display: block;
+	}
+
+	.character-box{
+		max-width: 664px;
+	}
+
+	.character-list:not(:last-child){
+		margin-bottom: 44px;
+	}
+
+	.character-box img{
+		display: block;
+		margin:44px auto 16px;
+		width: 61.6vw;
+	}
+
 }
 
 /*ーーーーーーーーーーーーーーーーー
