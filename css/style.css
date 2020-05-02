@@ -339,6 +339,12 @@ li:last-of-type .pf__bg{
 	/*ーーーーーーーーーーーーーーーーー
 	　bace
 	ーーーーーーーーーーーーーーーーー*/
+	.wrapper{
+	  padding: 0;
+	  margin: 0 18px;
+	  max-width: 880px;
+	}
+
 	.br__sp{
 		display: block;
 	}
@@ -347,11 +353,11 @@ li:last-of-type .pf__bg{
 	　section
 	ーーーーーーーーーーーーーーーーー*/
 	.section{
-	  margin-top: 160px;
+	  margin-top: 66px;
 	}
 
 	.section h2{
-	  margin-bottom: 120px;
+	  margin-bottom: 32px;
 	  font-size: 2.8rem;
 	  line-height: 1;
 	}
