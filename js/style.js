@@ -56,3 +56,15 @@ $(function(){
     });
   });
 });
+
+// ==============================
+// メニューボタンの設定
+//
+$(".btn-trigger").on("click",function(){
+  $(this).toggleClass("active");
+  $(".header-nav").toggleClass("slide-in");
+  $(".header-nav").addClass("slide-out")
+});
+//
+//
+// ===============================

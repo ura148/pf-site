@@ -126,7 +126,7 @@ h2.next-is-text{
 
 
 .header-menu-bar{
-	align-items: center; /* 上下方向の中央揃え */
+	align-items: center;
   padding: 0 18px;
   margin: 0;
 }
@@ -376,6 +376,121 @@ li:last-of-type .bge__content{
 	}
 
 	/*ーーーーーーーーーーーーーーーーー
+	　header
+	ーーーーーーーーーーーーーーーーー*/
+	.header-menu-bar{
+		padding: 4px 16px;
+	}
+	.header-nav{
+	  position: fixed;
+	  display: none;
+	  top: 40px;
+	  right: 0;
+		width: 61.80%;
+		height: 120vh;
+		background-color: rgba(10,10,12,0.9);
+	}
+
+	.header-nav .flex{
+		display: block;
+		text-align: center;
+	}
+
+	.menu-item{
+		padding-right: 0;
+	}
+
+
+	/*ーーーーーーーーーーーーーーーーー
+	　btn
+	ーーーーーーーーーーーーーーーーー*/
+	.btn-trigger{
+	  appearance: none;
+		-webkit-appearance: none;
+	  background-color: transparent;
+	  border: none;
+	  outline: none;
+	  padding: 0;
+		display: block;
+		position: relative;
+		width: 34px;
+		height: 32px;
+		z-index: 50;
+	}
+
+	.btn-menu{
+	  font-family: trajan-pro-3, arial;
+		letter-spacing: 0.01rem;
+		display: block;
+		position: absolute;
+		line-height: 1rem;
+		color: #ffffff;
+		font-size: 1rem;
+		text-transform: uppercase;
+		bottom: 0;
+	}
+
+	.btn-trigger .menu{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+
+	.btn-trigger .close{
+		display: block;
+		transition: all 0.5s;
+		opacity: 0;
+	}
+
+	.btn-trigger.active .menu{
+		opacity: 0;
+	}
+
+	.btn-trigger.active .close{
+		font-size: 1.1rem;
+		opacity: 1;
+		top: 28px;
+		left: -2px;
+	}
+
+	.btn-nav-line{
+		position: absolute;
+	  display: block;
+	  width: 34px;
+	  height: 2px;
+		border-radius: 1px;
+	  background-color: #ffffff;
+		transition: all 0.5s;
+	}
+
+	.btn-nav-line:first-of-type{
+		top: 0;
+	}
+
+	.btn-nav-line:nth-child(2){
+	  top: 7px;
+	  right: 0;
+	  width: 22px
+	}
+
+	.btn-nav-line:nth-child(3){
+		top: 14px;
+	}
+
+	.btn-trigger.active .btn-nav-line:first-of-type{
+		transform: rotate(45deg) ;
+		top: 9px;
+	}
+
+	.btn-trigger.active .btn-nav-line:nth-child(2){
+	  display: none;
+	}
+
+	.btn-trigger.active .btn-nav-line:nth-child(3){
+		transform: rotate(-45deg) ;
+		top: 9px;
+	}
+
+	/*ーーーーーーーーーーーーーーーーー
 	　eyecatch
 	ーーーーーーーーーーーーーーーーー*/
 	.eyecatch{
@@ -483,5 +598,36 @@ li:last-of-type .bge__content{
 	100%{
 		opacity: 1;
 		transform: translateY(0);
+	}
+}
+
+.slide-out{
+	display: block;
+	animation: slideout 0.4s forwards ease-in-out;
+}
+
+@keyframes slideout {
+	0%{
+		transform: translatex(0);
+	}
+
+	100%{
+		transform: translatex(61.8vw);
+	}
+}
+
+.slide-in{
+	display: block;
+	animation: slidein 0.4s forwards ease-in-out;
+}
+
+
+@keyframes slidein {
+	0%{
+		transform: translatex(61.8vw);
+	}
+
+	100%{
+		transform: translatex(0);
 	}
 }
