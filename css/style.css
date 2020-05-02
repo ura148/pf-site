@@ -360,6 +360,11 @@ li:last-of-type .bge__content{
 	  margin-top: 66px;
 	}
 
+	.section p{
+		margin: 0 auto;
+		max-width: 664px;
+	}
+
 	.section h2{
 	  margin-bottom: 32px;
 	  font-size: 2.8rem;
@@ -428,6 +433,7 @@ li:last-of-type .bge__content{
 	}
 
 	.character-box{
+		margin: 0 auto;
 		max-width: 664px;
 	}
 
@@ -449,7 +455,7 @@ li:last-of-type .bge__content{
 	}
 
 	.blog-item{
-		max-width: none;
+		max-width: 664px;
 	}
 
 	.blog-item:not(:last-child){
