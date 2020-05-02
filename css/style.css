@@ -313,13 +313,8 @@ li:last-of-type .pf__bg{
 　contact
 ーーーーーーーーーーーーーーーーー*/
 .contact .btna{
-	margin-bottom: 160px;
+	margin: 32px auto 160px;
 }
-
-
-
-
-
 
 /*ーーーーーーーーーーーーーーーーー
 　footer
@@ -338,10 +333,6 @@ li:last-of-type .pf__bg{
 .footer .flex{
 	justify-content: center;
 }
-
-
-
-
 
 /*ーーーーーーーーーーーーーーーーー
 　animation
