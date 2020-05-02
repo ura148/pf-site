@@ -8,7 +8,7 @@ $(window).on('load resize',function(){
       pfContent2 = $(".pf-content2"),
       pfItemWidth = pfItem.width(),
       pfItemHeight = pfItemWidth * 1.68 ,
-      pfItemheight2 = pfItemWidth / 1.618  ,
+      pfItemheight2 = pfItemWidth / 1.618 ,
       pfContentHeight = pfContent.height(),
       pfContent2Height = pfContent2.height();
 
@@ -21,7 +21,10 @@ $(window).on('load resize',function(){
       $(".content3").css("height",pfItemheight2);
 
       if(windowW <= deviceW){
-        let portfolioLi = $(".portfolio-list"),
+        let blogItem = $(".blog-item"),
+            blogItemWidth = blogItem.width(),
+            blogItemHeight = blogItemWidth * 0.2163 ,
+            portfolioLi = $(".portfolio-list"),
             portfolioItemF = $("#portfolioItemF"),
             portfolioitemE = $("#portfolioItemE"),
             portfolioItemFTop = $("#portfolioItemF").offset().top,
@@ -29,7 +32,9 @@ $(window).on('load resize',function(){
             portfolioItemEHeight = $("#portfolioItemE").height(),
             portfolioItemEBottom = portfolioItemETop + portfolioItemEHeight;
 
-        portfolioLi.css("height",(portfolioItemEBottom - portfolioItemFTop));
+        portfolioLi.css("height",(portfolioItemEBottom - portfolioItemFTop)),
+        $(".blog-item").css("height",blogItemHeight);
+
       }
 
 });
