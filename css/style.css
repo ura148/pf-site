@@ -57,6 +57,10 @@ img{
   line-height: 1;
 }
 
+h2.next-is-text{
+	margin-bottom: 32px;
+}
+
 
 /*ーーーーーーーーーーーーーーーーー
 　header
@@ -119,10 +123,20 @@ img{
 }
 
 /*ーーーーーーーーーーーーーーーーー
-　btn(header)
+　btn
 ーーーーーーーーーーーーーーーーー*/
 .btn-trigger{
 	display: none;
+}
+
+.btna{
+	padding: 3.5px 0;
+	margin: 0 auto;
+	width: 61.8%;
+	max-width: 232px;
+	background-color: #F76756; /* Asoka Orange*/
+	border-radius: 4px;
+	color: #F8F7F3; /* Asoka White*/
 }
 
 
@@ -286,6 +300,11 @@ li:last-of-type .pf__bg{
 
 .blog-list:nth-last-child(-n+3){
 	margin-bottom: 0;
+}
+
+.blog ul{
+	margin: 66px auto 32px;
+	margin-top: 66px;
 }
 
 
