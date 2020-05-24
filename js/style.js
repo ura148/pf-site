@@ -1,5 +1,3 @@
-
-
 $(window).on('load resize',function(){
   let deviceW = 768,
       windowW = $(window).width(),
