@@ -23,16 +23,8 @@ $(window).on('load resize',function(){
       if(windowW <= deviceW){
         let blogItem = $(".blog-item"),
             blogItemWidth = blogItem.width(),
-            blogItemHeight = blogItemWidth * 0.2163 ,
-            portfolioLi = $(".portfolio-list"),
-            portfolioItemF = $("#portfolioItemF"),
-            portfolioitemE = $("#portfolioItemE"),
-            portfolioItemFTop = $("#portfolioItemF").offset().top,
-            portfolioItemETop = $("#portfolioItemE").offset().top,
-            portfolioItemEHeight = $("#portfolioItemE").height(),
-            portfolioItemEBottom = portfolioItemETop + portfolioItemEHeight;
-
-        portfolioLi.css("height",(portfolioItemEBottom - portfolioItemFTop)),
+            blogItemHeight = blogItemWidth * 0.2163;
+            
         $(".blog-item").css("height",blogItemHeight);
 
       }
