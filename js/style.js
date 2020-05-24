@@ -7,7 +7,7 @@ $(window).on('load resize',function(){
       pfContent = $(".pf-content"),
       pfContent2 = $(".pf-content2"),
       pfItemWidth = pfItem.width(),
-      pfItemHeight = pfItemWidth * 1.68 ,
+      pfItemHeight = pfItemWidth * 1.7786 ,
       pfItemheight2 = pfItemWidth / 1.618 ,
       pfContentHeight = pfContent.height(),
       pfContent2Height = pfContent2.height();
@@ -24,7 +24,7 @@ $(window).on('load resize',function(){
         let blogItem = $(".blog-item"),
             blogItemWidth = blogItem.width(),
             blogItemHeight = blogItemWidth * 0.2163;
-            
+
         $(".blog-item").css("height",blogItemHeight);
 
       }
