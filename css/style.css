@@ -199,7 +199,7 @@ h2.next-is-text{
 	top: 0;
 }
 
-.eyecatch h2{
+.eyecatch__title{
 	position: relative;
   top: 50%;
 	transform: translateY(-59%);
@@ -350,7 +350,7 @@ li:last-of-type .bge__content{
 }
 
 @media screen and (max-width:1079px){
-	.eyecatch h2{
+	.eyecatch__title{
 		font-size: 6.2vw;
 	}
 }
@@ -601,7 +601,7 @@ li:last-of-type .bge__content{
 	}
 
 
-	.eyecatch h2{
+	.eyecatch__title{
 		padding-left: 16px;
 		font-size: 3.6rem;
 		text-align: left;
