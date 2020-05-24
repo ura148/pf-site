@@ -28,7 +28,6 @@ img{
   padding: 0 4%;
   margin: 0 auto;
   max-width: 880px;
-
 }
 
 .text-center{
@@ -49,6 +48,10 @@ img{
 	font-size: 3.2rem;
 	color:  #f8fafc;
 	vertical-align: middle;
+}
+
+.br--sp{
+	display: none;
 }
 
 /*ーーーーーーーーーーーーーーーーー
@@ -182,12 +185,24 @@ h2.next-is-text{
 	width: 100%;
 	margin-top: 66px;
   height: 27.1875vw;
-  background-image: url(../img/eyecatch__pc.jpg);
+	position: relative;
+  background-image: url(../img/eyecatch--pc.jpg);
   background-size: cover;
 }
 
+.eyecatch::before{
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	top: 0;
+}
+
 .eyecatch h2{
-  padding-top: calc(13.59375vw - 42px);
+	position: relative;
+  top: 50%;
+	transform: translateY(-59%);
   padding-left: 0;
   font-family: 'Star Jedi', arial;
   font-weight: normal;
@@ -332,6 +347,12 @@ li:last-of-type .bge__content{
 
 .footer .flex{
 	justify-content: center;
+}
+
+@media screen and (max-width:1079px){
+	.eyecatch h2{
+		font-size: 6.2vw;
+	}
 }
 
 
@@ -492,20 +513,12 @@ li:last-of-type .bge__content{
 	　eyecatch
 	ーーーーーーーーーーーーーーーーー*/
 	.eyecatch{
-		margin-top: 40px;
-	  height: 61.6vw;
-	  background-image: url(../img/eyecatch__sp.jpg);
-	  background-size: cover;
+		margin-top: 48px;
 	}
 
-	.eyecatch h2{
-	  padding-top: calc(13.59375vw - 42px);
-	  padding-left: 0;
-	  font-size: 3.6rem;
-		text-align: left;
-	  line-height: 1;
-	  color: #f8fafc;
-	}
+
+
+
 
 	/*ーーーーーーーーーーーーーーーーー
 	　profile
@@ -572,6 +585,32 @@ li:last-of-type .bge__content{
 	}
 
 }
+
+@media screen and (max-width:420px){
+	.br--sp{
+		display: block;
+	}
+	/*ーーーーーーーーーーーーーーーーー
+	　eyecatch
+	ーーーーーーーーーーーーーーーーー*/
+	.eyecatch{
+		margin-top: 56px;
+		height: 61.6vw;
+		background-image: url(../img/eyecatch--sp.jpg);
+		background-size: cover;
+	}
+
+
+	.eyecatch h2{
+		padding-left: 16px;
+		font-size: 3.6rem;
+		text-align: left;
+		line-height: 1;
+		color: #f8fafc;
+	}
+}
+
+
 
 /*ーーーーーーーーーーーーーーーーー
 　animation
