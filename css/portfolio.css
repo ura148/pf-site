@@ -24,6 +24,25 @@
   margin-bottom: 42px;
 }
 
+.portfolio__tertiaryheadline{
+  position: relative;
+  padding: 0 .5em 8px 16px;
+  margin-bottom: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+.portfolio__tertiaryheadline::before{
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  z-index: 2;
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #f76756;
+  border-radius: 10px;
+}
+
 .portfolio__container{
   display: flex;
   margin: 0 auto;
