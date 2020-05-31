@@ -1,3 +1,7 @@
+$(function(){
+  $("#footer").load("footer.html");
+});
+
 $(window).on('load resize',function(){
   let deviceW = 768,
       windowW = $(window).width(),
