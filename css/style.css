@@ -24,13 +24,16 @@ img{
 /*ーーーーーーーーーーーーーーーーー
 　bace
 ーーーーーーーーーーーーーーーーー*/
+.main{
+	margin: 66px 0 160px;
+}
 .wrapper{
   padding: 0 4%;
   margin: 0 auto;
   max-width: 880px;
 }
 
-.txt{
+.txt:not(:last-child){
 	margin-bottom: 26px;
 }
 
@@ -192,7 +195,6 @@ h2.next-is-text{
 ーーーーーーーーーーーーーーーーー*/
 .eyecatch{
 	width: 100%;
-	margin-top: 66px;
   height: 27.1875vw;
 	position: relative;
   background-image: url(../img/eyecatch--pc.jpg);
@@ -337,7 +339,7 @@ li:last-of-type .bge__content{
 　contact
 ーーーーーーーーーーーーーーーーー*/
 .contact .btna{
-	margin: 32px auto 160px;
+	margin: 32px auto 0px;
 }
 
 /*ーーーーーーーーーーーーーーーーー
@@ -369,6 +371,9 @@ li:last-of-type .bge__content{
 	/*ーーーーーーーーーーーーーーーーー
 	　bace
 	ーーーーーーーーーーーーーーーーー*/
+	.main{
+		margin: 56px 0 160px;
+	}
 	.wrapper{
 	  padding: 0;
 	  margin: 0 18px;
@@ -517,17 +522,6 @@ li:last-of-type .bge__content{
 		transform: rotate(-45deg) ;
 		top: 9px;
 	}
-
-	/*ーーーーーーーーーーーーーーーーー
-	　eyecatch
-	ーーーーーーーーーーーーーーーーー*/
-	.eyecatch{
-		margin-top: 48px;
-	}
-
-
-
-
 
 	/*ーーーーーーーーーーーーーーーーー
 	　profile
