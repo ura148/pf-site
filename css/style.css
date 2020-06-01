@@ -373,6 +373,10 @@ li:last-of-type .bge__content{
 	/*ーーーーーーーーーーーーーーーーー
 	　bace
 	ーーーーーーーーーーーーーーーーー*/
+	.main{
+		margin: 66px 0;
+	}
+	
 	.wrapper{
 	  padding: 0;
 	  margin: 0 18px;
