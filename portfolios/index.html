@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>uraura Portfolio site</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'heu4bgw',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-menu-bar flex">
+      <a href="/">
+        <h1>uraura portfolio site</h1>
+      </a>
+
+      <button class="btn-trigger">
+        <img src="../img/death-star.svg" alt="">
+        <span class="btn-menu menu">menu</span>
+        <span class="btn-menu close">close</span>
+      </button>
+
+      <div class="header-nav">
+        <ul class="flex">
+          <li class="menu-item"><a href="/portfolios">portfolio</a></li>
+          <li class="menu-item"><a href="/blog">blog</a></li>
+          <li class="menu-item"><a href="/contact">contact</a></li>
+          <li class="menu-item"><a href="https://twitter.com/urauradesign"><span class="fa fa-twitter sns"></a></li>
+          <li class="menu-item"><a href="https://github.com/ura148"><span class="fa fa-github sns"></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+  <div class="eyecatch">
+    <h2 class="eyecatch__title">Portfolios</h2>
+  </div>
+
+    <main class="main">
+      <section class="section portfolios wrapper">
+        <h2 class="headline text-center">Portfolios</h2>
+
+        <ul class="portfolio-list flex space-between">
+          <li class="bge__box" id="portfolioItemF">
+            <div class="bge__content">
+              <a href="">
+                <div class="pf-content text-center">
+                  <h3>MARE WATER</h3>
+                  <p>続きを見る</p>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <li class="bge__box">
+            <div class="bge__content bg2">
+              <a href="">
+                <div class="pf-content pf-content2 text-center">
+                  <h3>Portfolio<br>Site</h3>
+                  <p>続きを見る</p>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <li class="bge__box" id="portfolioItemE">
+            <div class="bge__content bg3">
+              <a href="">
+                <div class="pf-content text-center">
+                  <h3>MARE WATER</h3>
+                  <p>続きを見る</p>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+
+      </section>
+    </main>
+
+  <footer class="footer">
+    <p class="footer__site-name text-center">uraura portfolio site</p>
+      <ul class="flex">
+        <li class="menu-item footer__menu-item"><a href=""><span class="fa fa-twitter sns"></span></a></li>
+        <li class="menu-item footer__menu-item"><a href=""><span class="fa fa-github sns"></span></a></li>
+      </ul>
+    <p class="footer__copylight text-center"><small>Copyright© 2020 uraura Portfolio site All Rights Reserved.</small></p>
+  </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../js/style.js"></script>
+</body>
+
+</html>
