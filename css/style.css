@@ -384,8 +384,12 @@ li:last-of-type .bge__content{
 		margin-bottom: 38px;
 	}
 
-	.br__sp{
+	.br--sp{
 		display: block;
+	}
+
+	.br--pc{
+		display: none;
 	}
 
 	/*ーーーーーーーーーーーーーーーーー
@@ -394,10 +398,10 @@ li:last-of-type .bge__content{
 	.section:not(:last-child){
 		margin-bottom: 160px;
 	}
-	.section p{
+	/* .section p{
 		margin: 0 auto;
 		max-width: 664px;
-	}
+	} */
 
 	h2.next-is-text{
 		margin-bottom: 32px;
@@ -582,9 +586,9 @@ li:last-of-type .bge__content{
 		display: block;
 	}
 
-	.blog-item{
+	/* .blog-item{
 		max-width: 664px;
-	}
+	} */
 
 	.blog-item:not(:last-child){
 		margin-bottom: 32px;
