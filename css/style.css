@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+font-family: "Star Jedi";
+  src: url(../font/star-jedi.eot) format("eot"), url(../font/star-jedi.woff) format("woff");
+}
+
 html{
 	font-size:62.5%;/*16px×62.5％＝10px*/
 }
@@ -217,7 +222,7 @@ h2.next-is-text{
   top: 50%;
 	transform: translateY(-59%);
   padding-left: 0;
-  font-family: 'Star Jedi', arial;
+  font-family: Star Jedi, arial;
   font-weight: normal;
   text-align: center;
   font-size: 6.6rem;
@@ -354,7 +359,7 @@ li:last-of-type .bge__content{
 }
 
 .footer__site-name{
-	font-family: 'Star Jedi', arial;
+	font-family: Star Jedi, arial;
 	font-size: 3.2rem;
 }
 
