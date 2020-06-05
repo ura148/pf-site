@@ -73,6 +73,10 @@
   max-width: 432px;
   padding: 0 22px;
 }
+
+.portfolio__screenshot{
+  border: 1px solid #ccc;
+}
 @media screen and (max-width:1079px){
   .portfolio__title{
     font-size: 6.2vw;

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>uraura Portfolio site</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/portfolio.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'heu4bgw',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-menu-bar flex">
+      <a href="/">
+        <h1>uraura portfolio site</h1>
+      </a>
+
+      <button class="btn-trigger">
+        <img src="../img/death-star.svg" alt="">
+        <span class="btn-menu menu">menu</span>
+        <span class="btn-menu close">close</span>
+      </button>
+
+      <div class="header-nav">
+        <ul class="flex">
+          <li class="menu-item"><a href="/portfolios">portfolio</a></li>
+          <li class="menu-item"><a href="/blog">blog</a></li>
+          <li class="menu-item"><a href="/contact">contact</a></li>
+          <li class="menu-item"><a href="https://twitter.com/urauradesign"><span class="fa fa-twitter sns"></a></li>
+          <li class="menu-item"><a href="https://github.com/ura148"><span class="fa fa-github sns"></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="eyecatch">
+    <h2 class="title portfolio__title">浦木石材</h2>
+  </div>
+
+  <main class="main">
+    <section class="section">
+      <h3 class="title headline text-center">スクロール動画</h3>
+
+      <div class="portfolio__container portfolio__container-screenshot-video">
+        <div class="portfolio__video-card">
+          <p class="portfolio__subheadline portfolio__subheadline--scrollarea text-center">SP版</p>
+          <video src="../video/iphone X.mp4" controls class="portfolio__video-item"></video>
+        </div>
+
+        <div class="portfolio__video-card">
+          <p class="portfolio__subheadline portfolio__subheadline--scrollarea text-center">PC版</p>
+          <video src="../video/MacBook Pro.mp4" controls class="portfolio__video-item"></video>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <h3 class="title headline text-center">解説</h3>
+      <div class="portfolio__container">
+        <div class="portfolio__container-txt">
+          <section class="portfolio__subsection">
+            <h4 class="portfolio__subheadline">作品概要</h4>
+
+            <p class="txt">このサイトは実家石材店のコーポレートサイトです。</p>
+
+            <h5 class="portfolio__tertiaryheadline">作品URL</h5>
+            <p class="txt"><a href="https://uraura-design.site/uraki-sekizai/">https://uraura-design.site/uraki-sekizai/</a></p>
+
+            <h5 class="portfolio__tertiaryheadline">制作期間</h5>
+            <p class="txt">12日間</p>
+
+            <h5 class="portfolio__tertiaryheadline">制作範囲</h5>
+            <p class="txt">企画・デザイン・コーディング</p>
+
+            <h5 class="portfolio__tertiaryheadline">使用スキル</h5>
+            <p class="txt">Photoshop・Premiere Pro・XD・html・SCSS(BEM)・JavaScript(jQuery)</p>
+
+            <h5 class="portfolio__tertiaryheadline">リニューアルページの目的</h5>
+            <p class="txt">
+              1.納骨や改装といったお墓周りのお問い合わせ件数を増やす<br>
+              2.新規霊園購入のお問い合わせ件数を増やす
+            </p>
+
+            <h5 class="portfolio__tertiaryheadline">仮想リニューアルの目標</h5>
+            <p class="txt">
+              ・お問い合わせ件数を増やす。
+            </p>
+          </section>
+
+          <section class="portfolio__subsection">
+            <h4 class="portfolio__subheadline">コーディングで意識したこと</h4>
+
+            <h5 class="portfolio__tertiaryheadline">BEMに従ったSCSSを用いたCSS設計</h5>
+            <p class="txt">
+              命名規則に則ったclass名の記述を行うことで、後の修正やCSSの可読性を高めること、また再利用できるところは再利用できるよう意識しました。
+            </p>
+
+            <h5 class="portfolio__tertiaryheadline">レイアウトが崩れないレスポンシブ対応</h5>
+            <p class="txt">
+              Hover要素についてはモバイル端末で誤作動が起きてしまう可能性があったため、モバイル端末では影響がないように設定
+            </p>
+          </section>
+
+          <section class="portfolio__subsection">
+            <h4 class="portfolio__subheadline">浦木石材の基本情報</h4>
+
+            <p class="txt">
+              ・埼玉県朝霞市を拠点とする明治創業の老舗石材店<br>
+              ・朝霞市周辺の霊園・お寺での施工実績あり<br>
+              ・墓石の施工において下請け業者への依頼は一切なし<br>
+              ・お客様のご案内から工事に至るまで社長1人が基本行う<br>
+              ・「利益<お客様の思い」を優先
+              ・見えないところも丁寧に施工
+              ・明治創業。現社長は4代目
+            </p>
+          </section>
+
+          <section class="portfolio__subsection">
+            <h4 class="portfolio__subheadline">ペルソナ設定①</h4>
+            <h5 class="portfolio__tertiaryheadline">前提</h5>
+            <p class="txt">ペルソナ①は既に市内霊園で顧客となっている方からの納骨依頼を想定しました。</p>
+
+
+            <h5 class="portfolio__tertiaryheadline">年齢・性別</h5>
+            <p class="txt">
+              お墓の購入きっかけが倍増する年代が50代〜60代。理由は両親の死。このことから納骨依頼も同年代で行われると想定。これらのことからペルソナは50代〜60代を想定。<br>
+            </p>
+
+            <h5 class="portfolio__tertiaryheadline">仏事に関する悩み</h5>
+            <p class="txt">
+              仏事に関して最も悩んだ悩みのうち、法要・法事に関する悩みは18.3%で2位、1位は葬儀ということからなくなった後の手続きに関して悩みを多く抱えていることを想定。<br>
+              手続きについては霊園に相談していると仮定（既存顧客の中で納骨の依頼は少なく、多くの納骨は霊園が行っているため。）
+            </p>
+
+
+            <h5 class="portfolio__tertiaryheadline">ペルソナ像</h5>
+            <p class="txt">上記で説明した理由から下記をペルソナ像①とした。</p>
+
+            <img src="../img/persona2.jpeg" alt="">
+            <p class="txt">
+              浅川拓郎さん（52歳）<br>
+              ・埼玉県朝霞市出身<br>
+              ・朝霞市内の霊園に実家のお墓あり（建墓は浦木石材が実施）<br>
+              ・仏事に関して悩みを抱えている。<br>
+              ・親がなくなったため、納骨を行う予定<br>
+            </p>
+          </section>
+
+          <section class="portfolio__subsection">
+            <h4 class="portfolio__subheadline">フロー</h4>
+            <p class="txt">
+              ペルソナ①がお問い合わせするまでのフローは下記を想定。<br>
+              なお納骨の相談が現状霊園に流出してしまっていることから、それ以前に「法要・納骨の相談＝浦木石材」という認知をしていただくために、定期的に既存顧客に対してダイレクトメッセージを送信する試作も今回から実施する。</p>
+            <p class="txt">
+              ①両親がなくなったため葬儀や法要（納骨）の手続きの準備を行う。<br>
+              ②3,4ヶ月に1回刊行される浦木石材の会報誌から納骨に関する記述を思い出す。<br>
+              ③電話もしくはWebのフォームから納骨に関してお問い合わせを行う。<br>
+            </p>
+          </section>
+
+
+          <section class="portfolio__subsection">
+            <h4 class="portfolio__subheadline">ペルソナ設定②</h4>
+            <h5 class="portfolio__tertiaryheadline">前提</h5>
+            <p class="txt">
+              ペルソナ②は市営霊園の抽選にあたり新規でお墓を購入する方を想定。<br>
+              ※市営霊園の購入には遺骨を持っていることが条件のため、
+            </p>
+
+            <h5 class="portfolio__tertiaryheadline">年齢・性別</h5>
+            <p class="txt">
+              お墓の購入きっかけが倍増する年代が50代〜60代。理由は両親の死。このことから納骨依頼も同年代で行われると想定。これらのことからペルソナは50代〜60代を想定。<br>
+            </p>
+
+            <h5 class="portfolio__tertiaryheadline">お墓を購入するときに重要視するポイント</h5>
+            <p class="txt">
+              お墓を購入する時に重要視されるポイント（アンケート結果）は下記のグラフのようになっている。上位3つは「墓石の価格」32%、「信頼感・安全性」7%、「石材店のアフターサービス」6%、となっていることから今回のペルソナが重要視するポイントとして「価格」「信頼感・安全性」「アフターサービス」を想定する。
+            </p>
+
+            <img src="../img/grave-graph.jpg" alt="">
+
+            <p class="txt">※<a href="https://boseki-connect.com/report/no68/">墓石コネクト</a>より引用</p>
+
+            <h5 class="portfolio__tertiaryheadline">ペルソナ像</h5>
+            <p class="txt">上記で説明した理由から下記をペルソナ像②とした。</p>
+
+            <img src="../img/persona2.jpeg" alt="">
+            <p class="txt">
+              綿谷浩一郎さん（55歳）<br>
+              ・埼玉県新座市在住<br>
+              ・両親の死をきっかけに墓石の購入を決意<br>
+              ・市営霊園の抽選に当選。これから墓石購入<br>
+              ・お墓選びにおいて重要視するポイントは「価格」「信頼感・安全性」「アフターサービス」。<br>
+            </p>
+          </section>
+
+
+          <section class="portfolio__subsection">
+            <h4 class="portfolio__subheadline">フロー</h4>
+            <p class="txt">ペルソナ①がお問い合わせするまでのフローは下記を想定</p>
+            <p class="txt">
+              ①市営霊園の抽選会でもらう石材店リストを確認。<br>
+              ②リストの一番上に載っている「浦木石材」をネットで検索。<br>
+              ③Webサイトにアクセス。<br>
+              ④石材店を選ぶ理由の上位3つにあたる「価格について」や「どんな石材店なのか（信頼度）」、「アフターフォローの有無」を確認。<br>
+              ⑤お問い合わせフォームからお問い合わせ。
+            </p>
+          </section>
+
+
+
+          <section class="portfolio__subsection">
+            <h4 class="portfolio__subheadline">コンセプト</h4>
+            <h5 class="portfolio__tertiaryheadline">設定するにあたり</h5>
+            <p class="txt">
+              デザイン（レイアウト・ワイヤーフレーム）を考えるにあたりキーワードを選定しました。まず始めに今回企業情報や父親の働く姿を見てきたイメージから【浦木石材】を人に例えてみました。すると下記のようなイメージが湧きました。
+            </p>
+
+            <p class="txt">
+              ・相手思い（お金のないお客様でも最大限良いものを建てられるよう寄り添う父の姿から）<br>
+              ・親切に相談に乗ってくれる（お客様がわからないことがあれば、自宅に伺って丁寧に説明する姿勢から）<br>
+              ・職人気質（お客様には気付いてもらえない見えないところも丁寧に施工していくため。こだわりの強さから連想）<br>
+            </p>
+
+            <p class="txt">そして上記のイメージから下記のようなキーワードを考えました。</p>
+
+            <p class="txt">
+              ・どんなお客様にでも最大限の価値提供をする人を連想させる『真面目・責任感』<br>
+              ・親切で優しく相手想いな人を連想させる『親切・丁寧・信頼』<br>
+              ・見えない所にもこだわる職人を連想させる『信念』
+            </p>
+
+            <p class="txt">以上のキーワードを下にデザインを作成いたしました。</p>
+          </section>
+
+
+          <section class="portfolio__subsection">
+            <h4 class="portfolio__subheadline">ワイヤーフレーム</h4>
+            <p class="txt">ペルソナの情報会社の特徴から<span>【親身なって対応してくれる信頼・安心できる石屋さん】</span>を伝えることを念頭に下記のようなワイヤーフレームを作成しました。</p>
+
+            <h5 class="portfolio__tertiaryheadline">親身な姿勢、信頼できる相手をイメージしてもらうために</h5>
+            <p class="txt">
+              Firstviewではご家族を亡くされた方を想定し、「これからお墓を買う」という大きな決断をされるお客様へ寄り添うメッセージを記載。
+            </p>
+
+            <h5 class="portfolio__tertiaryheadline">信頼できる石屋さんであることを伝えるために</h5>
+            <p class="txt">新規墓石購入者がお墓選びにて重要視するポイントである「価格」「信頼感・安全性」「アフターサービス」を最優先で伝え、ひと目で伝わるようにコンパクトにまとめました。</p>
+
+            <p class="txt">それでもなお、初めての方には分かりにくい内容のため、社長自らが各項目について説明した動画を掲載することで、信頼感や安心感を伝えることを意識しました。</p>
+
+            <h5 class="portfolio__tertiaryheadline">アフターフォローを含めた各種サービスを伝えるために</h5>
+            <p class="txt">浦木石材が実施している建墓以外のサービスについてひと目でわかるようにコンパクトにまとめました。</p>
+
+            <h5 class="portfolio__tertiaryheadline">年配の方でもお問い合わせしやすいように</h5>
+            <p class="txt">フォームでのお問い合わせ方法がわからない、もしくは今すぐ直接聞きたいという方のためにお電話でのお問い合わせにも対応しました。</p>
+          </section>
+
+
+          <section class="portfolio__subsection">
+            <h4 class="portfolio__subheadline">デザイン</h4>
+
+            <p class="txt">
+              上記のワイヤーフレーム、キーワードを基に下記のデザインを作成しました。
+            </p>
+
+            <h5 class="portfolio__tertiaryheadline">職人かつ相手に寄り添うイメージを伝えるために</h5>
+            <p class="txt">
+              サイトのメインカラーには和風で誠実感のあるイメージを伝えるために深い紺色（#04436D）を選択。
+            </p>
+
+            <h5 class="portfolio__tertiaryheadline">和・信頼感のイメージを伝えるために</h5>
+            <p class="txt">
+              タイトルやアクセントになるところには【Noto Serif JP】を使用することで和のイメージや信頼感、寄り添うイメージを持たせました。
+            </p>
+
+            <h5 class="portfolio__tertiaryheadline">ご年配の方でも見やすくするために</h5>
+            <p class="txt">
+              フォントには可読性の高い【Noto Sans JP】を使用。サイト全体の文章のFont-weightを500と高めに設定しました。
+            </p>
+
+            <h5 class="portfolio__tertiaryheadline">真面目さを伝えるために</h5>
+            <p class="txt">写真やカードについては全て四角形を使用。キチッとしたイメージを持たせ誠実さを伝えることを意識しました。</p>
+
+            <h5 class="portfolio__tertiaryheadline">サービスを分かりやすく伝えるために</h5>
+            <p class="txt">イメージしにくい各種サービスについて、アイコンを添えることで視覚的にそれぞれのサービスを分かりやすくすることを意識しました。</p>
+
+            <h5 class="portfolio__tertiaryheadline">短調にならないように</h5>
+            <p class="txt">誠実さとのバランスを見て、「浦木石材が選ばれる理由」エリアが短調にならぬよう、お墓の象徴である「石」のテクスチャを配置し、コンテンツにリズム感を持たせました。</p>
+          </section>
+        </div>
+
+        <div class="portfolio__container-screenshot">
+          <img src="../img/screenshot02.jpg" alt="浦木石材SP版ウェブサイトのスクリーンショット" class="portfolio__screenshot">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__site-name text-center">uraura portfolio site</p>
+      <ul class="flex">
+        <li class="menu-item footer__menu-item"><a href=""><span class="fa fa-twitter sns"></span></a></li>
+        <li class="menu-item footer__menu-item"><a href=""><span class="fa fa-github sns"></span></a></li>
+      </ul>
+    <p class="footer__copylight text-center"><small>Copyright© 2020 uraura Portfolio site All Rights Reserved.</small></p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../js/style.js"></script>
+
+</body>
+</html>
