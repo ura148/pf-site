@@ -54,6 +54,11 @@ img{
 	line-height: 1;
 }
 
+.headline--sub{
+  font-size: 2.6rem;
+  margin-bottom: 42px;
+}
+
 .text-center{
   text-align: center;
 }
@@ -90,42 +95,6 @@ h2.next-is-text{
 	margin-bottom: 32px;
 }
 
-
-/*ーーーーーーーーーーーーーーーーー
-　background-effect
-ーーーーーーーーーーーーーーーーー*/
-.bge__content{
-	background-image: url(../img/pf1.jpg);
-  background-size: cover;
-  background-position: center;
-	box-shadow: 0 3px 6px 2px rgba(0,0,0,0.32);
-  z-index: 0;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.bge__content:after{
-	content: '';
-  position: absolute;
-	background-position: center;
-
-}
-
-.bge__content:hover:after{
-	/* 輪郭がぼやけてしまうのでブラー範囲を広げる */
-  top: -5px;
-  bottom: -5px;
-  left: -5px;
-  right: -5px;
-  background: inherit;
-  filter: blur(5px);
-	z-index: -1;
-	transition:	all 0.6s ease;
-	transform: scale(1.3);
-}
-
-
 /*ーーーーーーーーーーーーーーーーー
 　header
 ーーーーーーーーーーーーーーーーー*/
@@ -145,8 +114,6 @@ h2.next-is-text{
 	color: #f8fafc;
 }
 
-
-
 .header-menu-bar{
 	align-items: center;
   padding: 0 18px;
@@ -157,8 +124,6 @@ h2.next-is-text{
   display: flex;
   justify-content: space-between;
 }
-
-
 
 .myhead p {
   font-size: var(--f6);
@@ -249,56 +214,6 @@ h2.next-is-text{
 }
 
 /*ーーーーーーーーーーーーーーーーー
-　portfolio
-ーーーーーーーーーーーーーーーーー*/
-.bge__box{
-	position: relative;
-	flex-basis: 30%;
-	max-width: 275px;
-}
-
-.bg2{
-	background-image: url(../img/pf2.jpg);
-}
-
-
-.pf-img{
-	position: absolute;
-}
-
-.pf-img:hover{
-	filter: blur(5px);
-}
-
-.pf-content{
-	width: 100%;
-	opacity: 0;
-	position: absolute;
-	color: #fff;
-	background-color:	rgba(0,0,0,0.7);
-	-webkit-transition:	all 0.6s ease;
-	transition:	all 0.4s ease;
-}
-
-.pf-content:hover{
-	opacity: 1;
-}
-
-.pf-content h3{
-  margin-bottom: 10px;
-  font-size: 3.2rem;
-  line-height: 1.2;
-}
-
-.pf-content P:hover{
-	color: #707070;
-}
-
-li:last-of-type .bge__content{
-  margin-bottom: 0;
-}
-
-/*ーーーーーーーーーーーーーーーーー
 　characteristics
 ーーーーーーーーーーーーーーーーー*/
 .characteristics .flex{
@@ -373,7 +288,6 @@ li:last-of-type .bge__content{
 		font-size: 6.2vw;
 	}
 }
-
 
 @media screen and (max-width:768px){
 	/*ーーーーーーーーーーーーーーーーー
@@ -552,20 +466,7 @@ li:last-of-type .bge__content{
 		margin: 0 auto 16px;
 	}
 
-	/*ーーーーーーーーーーーーーーーーー
-	　profile
-	ーーーーーーーーーーーーーーーーー*/
-	.portfolios .flex{
-		display: block;
-	}
 
-	.bge__box{
-		margin:0 auto;
-	}
-
-	.bge__box:not(:last-child){
-		margin-bottom: 32px;
-	}
 
 	/*ーーーーーーーーーーーーーーーーー
 	　characteristics
