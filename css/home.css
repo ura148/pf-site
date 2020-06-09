@@ -32,11 +32,14 @@
   background-image: url(../img/pf3.jpg);
 }
 
+.bg4{
+  background-image: url(../img/pf4.jpg);
+}
+
 .portfolio__background-image:after{
 	content: '';
   position: absolute;
 	background-position: center;
-
 }
 
 .portfolio__background-image.hover:hover:after{
