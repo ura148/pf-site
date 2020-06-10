@@ -77,6 +77,12 @@
 .portfolio__screenshot{
   border: 1px solid #ccc;
 }
+
+.portfolio__graph{
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+}
 @media screen and (max-width:1079px){
   .portfolio__title{
     font-size: 6.2vw;
