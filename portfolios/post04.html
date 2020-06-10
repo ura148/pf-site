@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>uraura Portfolio site</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/portfolio.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'heu4bgw',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-menu-bar flex">
+      <a href="/">
+        <h1>uraura portfolio site</h1>
+      </a>
+
+      <button class="btn-trigger">
+        <img src="../img/death-star.svg" alt="">
+        <span class="btn-menu menu">menu</span>
+        <span class="btn-menu close">close</span>
+      </button>
+
+      <div class="header-nav">
+        <ul class="flex">
+          <li class="menu-item"><a href="/portfolios">portfolio</a></li>
+          <li class="menu-item"><a href="/blog">blog</a></li>
+          <li class="menu-item"><a href="/contact">contact</a></li>
+          <li class="menu-item"><a href="https://twitter.com/urauradesign"><span class="fa fa-twitter sns"></a></li>
+          <li class="menu-item"><a href="https://github.com/ura148"><span class="fa fa-github sns"></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="eyecatch">
+    <h2 class="title portfolio__title">Fising Score</h2>
+  </div>
+
+  <main class="main">
+    <section class="section">
+      <h3 class="title headline text-center">使用動画</h3>
+
+      <div class="portfolio__container portfolio__container-screenshot-video">
+        <div class="portfolio__video-card">
+          <p class="portfolio__subheadline portfolio__subheadline--scrollarea text-center">SP版</p>
+          <video src="../video/sp--FishingScore.mp4" controls class="portfolio__video-item"></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3 class="title headline text-center">解説</h3>
+      <div class="portfolio__container">
+        <div class="portfolio__container-txt">
+          <section class="portfolio__subsection">
+            <h4 class="portfolio__subheadline">作品概要</h4>
+
+            <h5 class="portfolio__tertiaryheadline">想定した利用方法</h5>
+            <p class="txt">このWebAppは釣りに行ったその人の釣果をpoint形式にすることで、友人とスコアを競いあったり自分の釣果の良し悪しを数字で判断することができます。</p>
+
+            <h5 class="portfolio__tertiaryheadline">作成背景</h5>
+            <p class="txt">父親と釣りにいくたびに勝負をしているので、魚種別にしっかりと点数を分けて勝負をしたいと考えていたのがきっかけです。</p>
+
+            <h5 class="portfolio__tertiaryheadline">使い方</h5>
+            <p class="txt">
+              このアプリは種類別の釣果数を記録するためのものです。まずはじめに「釣果を追加」ボタンを押します。<br>
+              すると記録するためのフォームが追加されます。一番左の「魚種を選択」から釣った魚の種類を選びます。<br>
+              次にその魚を釣った数（釣果数）を入力します。入力すると今日の合計釣果と今日の合計pointが計算されます。<br>
+              (今日の合計ポイントは【魚ごとに設定されたpoint × 釣果数】で算出されます。)
+            </p>
+
+            <h5 class="portfolio__tertiaryheadline">作品URL</h5>
+            <p class="txt"><a href="https://uraura-design.site/fish/">https://uraura-design.site/uraki-sekizai/</a></p>
+
+            <h5 class="portfolio__tertiaryheadline">制作期間</h5>
+            <p class="txt">約4日間</p>
+
+            <h5 class="portfolio__tertiaryheadline">制作範囲</h5>
+            <p class="txt">企画・デザイン・コーディング</p>
+
+            <h5 class="portfolio__tertiaryheadline">使用スキル</h5>
+            <p class="txt">XD・html・CSS・JavaScript</p>
+          </section>
+
+          <section class="portfolio__subsection">
+            <h4 class="portfolio__subheadline">作成で苦労したこと</h4>
+            <h5 class="portfolio__tertiaryheadline">追加した項目の削除</h5>
+            <p class="txt">
+              「釣果を追加」ボタンで追加された項目を削除する際、生成されたものが全て同じものと判断されていたため1つだけ削除したくても全て消えてしまいました。<br>
+              そのため追加される項目にidを生成することで、それぞれの要素を判定し削除することが可能になりました。
+            </p>
+
+            <h5 class="portfolio__tertiaryheadline">釣果数に応じて魚の画像を表示する。</h5>
+            <p class="txt">
+              テキスト情報とは違い、画像については上書きをすることができず、当初は釣果数を増やしても減らしても画像は増え続けていました。<br>
+              そのため、釣果数と画像の数があっていない時のみ一度画像を全て削除し、再度釣果数分生成するようにしました。
+            </p>
+          </section>
+
+        </div>
+
+        <div class="portfolio__container-screenshot">
+          <img src="../img/screenshot04.jpg" alt="Fishing ScoreのSP版ウェブサイトのスクリーンショット" class="portfolio__screenshot">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__site-name text-center">uraura portfolio site</p>
+      <ul class="flex">
+        <li class="menu-item footer__menu-item"><a href=""><span class="fa fa-twitter sns"></span></a></li>
+        <li class="menu-item footer__menu-item"><a href=""><span class="fa fa-github sns"></span></a></li>
+      </ul>
+    <p class="footer__copylight text-center"><small>Copyright© 2020 uraura Portfolio site All Rights Reserved.</small></p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../js/style.js"></script>
+
+</body>
+</html>
